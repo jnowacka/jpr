@@ -11,11 +11,14 @@ public class Miska {
 		this.iloscChrupkow = 10;
 	}
 	
-	public boolean zmniejszenieZawartosci() {
-		if(this.iloscChrupkow == 0) return false;
+	public void zmniejszenieZawartosci() throws Exception {
+		if(this.iloscChrupkow <= 0) {
+			//Exception wyjatek = new Exception();
+			//throw wyjatek;
+			throw new Exception("Nie da siê jeœæ z pustej miski!");
+		}
 		else {
 			this.iloscChrupkow--;
-			return true;
 		}
 	}
 	

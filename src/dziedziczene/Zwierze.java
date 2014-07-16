@@ -7,9 +7,9 @@ public abstract class Zwierze {
 	public int publicWaga=10;
 	public abstract void dajGlos();
 	
-	public void jedz() {
-		boolean czyZjadl = mojaMiska.zmniejszenieZawartosci();
-		if(czyZjadl == true) this.waga++;
+	public void jedz() throws Exception {
+		mojaMiska.zmniejszenieZawartosci();
+		this.waga++;
 	}
 	
 	public void przypisanieMiski(Miska miskaDoPrzypisania) {

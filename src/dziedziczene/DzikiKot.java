@@ -12,7 +12,13 @@ public class DzikiKot {
 	}
 	
 	public void jedz() {
-		boolean czyZjadl = mojaMiska.zmniejszenieZawartosci();
-		if(czyZjadl == true) this.waga++;
+		try {
+			mojaMiska.zmniejszenieZawartosci();
+		} catch (Exception e) {
+			System.out.println("wyst¹pi³ wyj¹tek: "+e.getMessage());
+			mojaMiska.nasypKarme();
+			//e.printStackTrace();
+		}
+		this.waga++;
 	}
 }

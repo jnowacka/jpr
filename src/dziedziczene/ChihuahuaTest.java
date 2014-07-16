@@ -5,7 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class ChihuahuaTest {
-
+	
+	
 	@Test
 	public void test() {
 		
@@ -17,7 +18,7 @@ public class ChihuahuaTest {
 		Kot filemon = new Kot();
 		filemon.przypisanieMiski(mojaRozowaMiska);
 		//kot je
-		filemon.jedz();
+		//filemon.jedz();
 		
 		//WERSJA PROCEDURALNA -> klasy s¹ "g³upie", o wszystkim decyduje "main"
 		//tworzenie kota i miski +nape³nianie
