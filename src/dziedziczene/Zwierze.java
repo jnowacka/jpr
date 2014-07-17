@@ -10,6 +10,7 @@ public abstract class Zwierze {
 	public void jedz() throws Exception {
 		mojaMiska.zmniejszenieZawartosci();
 		this.waga++;
+		System.out.println("Zjad³em i wa¿ê teraz "+this.waga);
 	}
 	
 	public void przypisanieMiski(Miska miskaDoPrzypisania) {
