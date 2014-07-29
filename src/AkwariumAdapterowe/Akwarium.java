@@ -5,6 +5,17 @@ import java.util.List;
 
 public class Akwarium {
 
-	public List<Zwierze> zwierzaki = new ArrayList<>();
+	private List<Zwierze> zwierzaki = new ArrayList<>();
+	
+	public void dodajZwierze(Zwierze z) {
+		zwierzaki.add(z);
+	}
+
+	public void zwierzakiPlywaja() {
+		for(Zwierze zwierzak: zwierzaki) {
+			zwierzak.plyn();
+		}
+		
+	}
 
 }
