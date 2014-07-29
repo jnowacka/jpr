@@ -19,6 +19,7 @@ public class Main {
 		System.out.println(litera);
 		if(litera.equals("r")) fabryka = new FabrykaRycerzy();
 		else if(litera.equals("m")) fabryka = new FabrykaMagow();
+		//else if(litera.equals("k")) fabryka = new FabrykaKsiezniczek();
 		else {
 			System.out.println("Wybra³eœ z³¹ literê");
 			return;

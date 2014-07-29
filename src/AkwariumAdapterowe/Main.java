@@ -6,10 +6,13 @@ public class Main {
 		Akwarium mojeAkwarium = new Akwarium();
 		Rybka r = new Rybka();
 		Zlow z = new Zlow();
-		mojeAkwarium.dodajZwierze(r);
-		mojeAkwarium.dodajZwierze(z);
+		
+		mojeAkwarium.zwierzaki.add(r);
+		mojeAkwarium.zwierzaki.add(z);
 
-		mojeAkwarium.uruchom();
+		for(Zwierze zwierzak: mojeAkwarium.zwierzaki) {
+			zwierzak.plyn();
+		}
 		
 	}
 
