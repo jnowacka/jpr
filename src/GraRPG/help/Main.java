@@ -26,7 +26,7 @@ public class Main {
 		
 		Temat postacie = new Temat("POSTACIE W GRZE");
 		Pytanie postaciePytanie1 = new Pytanie("Ile jest rodzajów postaci w grze?");
-		postaciePytanie1.setOdpowiedz("Na razie dwie - rycerze i magowie. Ale nasza super elastyczna konstrukcja fabryk postaci pozwala ³atwo rozwin¹æ grê o nowe postacie. Planujemy ksiê¿niczki.")
+		postaciePytanie1.setOdpowiedz("Na razie dwie - rycerze i magowie. Ale nasza super elastyczna konstrukcja fabryk postaci pozwala ³atwo rozwin¹æ grê o nowe postacie. Planujemy ksiê¿niczki.");
 
 		Temat pomocCala =  new Temat("POMOC DO GRY LASKI I MIECZE");
 		pomocCala.dodajPodtemat(bronie);
